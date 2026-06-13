@@ -393,6 +393,120 @@ body {
   margin-top: 3rem;
 }
 
+/* ── Admin form ── */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.admin-field span {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: 'EB Garamond', serif;
+}
+
+.admin-field input,
+.admin-field textarea {
+  background: var(--bg-parchment);
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.admin-field input:focus,
+.admin-field textarea:focus {
+  outline: none;
+  border-color: var(--border-gold);
+  box-shadow: 0 0 0 2px rgba(154, 123, 58, 0.18);
+}
+
+.admin-field textarea {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.admin-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.admin-row-3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.admin-verse-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: -0.4rem;
+}
+
+.admin-submit {
+  background: var(--bg-table-head);
+  color: var(--text-white);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-family: 'Noto Serif Tamil', serif;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s;
+  align-self: flex-start;
+}
+
+.admin-submit:hover:not(:disabled) { background: var(--border-dark); }
+.admin-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.admin-error {
+  background: #fdecea;
+  border: 1px solid #e57373;
+  border-radius: 3px;
+  padding: 0.6rem 1rem;
+  color: #b71c1c;
+  font-size: 0.9rem;
+}
+
+.admin-success {
+  background: #e8f5e9;
+  border: 1px solid #81c784;
+  border-radius: 3px;
+  padding: 0.6rem 1rem;
+  color: #1b5e20;
+  font-size: 0.9rem;
+}
+
+.new-post-link {
+  font-size: 0.78rem;
+  color: #e0c98a;
+  text-decoration: none;
+  border: 1px solid rgba(224, 201, 138, 0.5);
+  border-radius: 2px;
+  padding: 0.25rem 0.7rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  transition: background 0.15s;
+}
+
+.new-post-link:hover { background: rgba(224, 201, 138, 0.15); }
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   html { font-size: 15px; }

@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="site-title">வில்லிபாரதம்</div>
             <div className="site-subtitle">Villiputhurar's Tamil Mahābhārata — Daily Reading</div>
           </Link>
+          <Link href="/admin/new" className="new-post-link">+ புதிய பதிவு</Link>
         </header>
 
         <main>
