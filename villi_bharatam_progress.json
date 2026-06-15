@@ -1,10 +1,10 @@
 {
-  "sessionNumber": 0,
-  "lastDate": null,
+  "sessionNumber": 1,
+  "lastDate": "2026-06-15",
   "currentParva": 1,
   "currentParvaName": "ஆதிபருவம்",
   "currentSubSection": "பாயிரம்",
   "verseStart": 1,
-  "verseEnd": 0,
-  "totalVersesRead": 0
+  "verseEnd": 5,
+  "totalVersesRead": 5
 }
